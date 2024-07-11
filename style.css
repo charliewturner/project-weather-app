@@ -10,14 +10,15 @@
   border-radius: 30px;
 }
 
-.container {
+.searchbar-container {
+  display: flex;
+  height: 50px;
+  margin: 20px;
   border-style: solid;
   width: auto;
 }
-
 .searchbar {
-  height: 50px;
-  margin: 20px;
+  flex: 1;
 }
 .one {
   display: flex;
@@ -70,10 +71,25 @@
   margin: 1px;
 }
 .three {
+  display: flex;
   height: 100px;
   margin: 2px;
 }
+
+.three > * {
+  flex: 1;
+  border: solid;
+  margin: 2px;
+}
+
 .four {
+  display: flex;
   height: 100px;
+  margin: 2px;
+}
+
+.four > * {
+  flex: 1;
+  border: solid;
   margin: 2px;
 }
