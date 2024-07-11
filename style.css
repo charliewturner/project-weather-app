@@ -20,14 +20,48 @@
   margin: 20px;
 }
 .one {
-  height: 150px;
+  display: flex;
+  height: 250px;
+}
+.container-one {
+  flex: 1;
+  width: auto;
+  border: solid;
+  margin: 3px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.symbol {
+  flex: 1;
+  border: solid;
+  margin: 2px;
+}
+
+.class {
+  height: 75px;
+  border: solid;
+  margin: 2px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.right > * {
+  flex: 1;
+  border: solid;
 }
 .two {
-  height: 150px;
+  height: 100px;
 }
 .three {
-  height: 150px;
+  height: 100px;
 }
 .four {
-  height: 150px;
+  height: 100px;
 }
