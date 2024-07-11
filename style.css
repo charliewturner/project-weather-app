@@ -1,3 +1,8 @@
+* {
+  border-radius: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
 .app-container {
   display: flex;
   flex-direction: column;
@@ -36,16 +41,17 @@
 
 .left {
   display: flex;
+
   flex-direction: column;
 }
 
-.symbol {
+.weather-symbol {
   flex: 1;
   border: solid;
   margin: 2px;
 }
 
-.class {
+.weather-class {
   height: 75px;
   border: solid;
   margin: 2px;
@@ -64,7 +70,7 @@
 
 .two {
   display: flex;
-  height: 100px;
+  height: 150px;
   margin: 2px;
 }
 
@@ -72,6 +78,24 @@
   flex: 1;
   border: solid;
   margin: 1px;
+}
+
+.forecast {
+  display: flex;
+  flex-direction: column;
+  border: solid;
+  margin: 1px;
+}
+
+.forecast > * {
+  border: solid;
+  margin: 1px;
+}
+.mini-symbol {
+  flex: 1;
+}
+.forecast-day {
+  height: 33%;
 }
 .three {
   display: flex;
