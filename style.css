@@ -20,6 +20,9 @@
 .searchbar {
   flex: 1;
 }
+.searchbar-submit {
+  width: 50px;
+}
 .one {
   display: flex;
   height: 250px;
