@@ -23,6 +23,27 @@ async function checkWeather() {
   document.querySelector(".location").innerHTML = data.location.name;
   document.querySelector(".local-time").innerHTML = data.location.localtime;
 
+  document.querySelector(".mini-symbol-one").innerHTML =
+    "High: " +
+    data.forecast.forecastday[0].day.maxtemp_c +
+    "<br>" +
+    "Low: " +
+    data.forecast.forecastday[0].day.mintemp_c;
+
+  document.querySelector(".mini-symbol-two").innerHTML =
+    "High: " +
+    data.forecast.forecastday[1].day.maxtemp_c +
+    "<br>" +
+    "Low: " +
+    data.forecast.forecastday[1].day.mintemp_c;
+
+  document.querySelector(".mini-symbol-three").innerHTML =
+    "High: " +
+    data.forecast.forecastday[2].day.maxtemp_c +
+    "<br>" +
+    "Low: " +
+    data.forecast.forecastday[2].day.mintemp_c;
+
   const weekday = [
     "Sunday",
     "Monday",
@@ -41,10 +62,6 @@ async function checkWeather() {
   //current day shown in the forecast-day-one div
   document.getElementById("forecast-day-two").innerHTML = day;
   document.getElementById("forecast-day-three").innerHTML = day;
-  document.getElementById("forecast-day-four").innerHTML = day;
-  document.getElementById("forecast-day-five").innerHTML = day;
-  document.getElementById("forecast-day-six").innerHTML = day;
-
   console.log(data);
 }
 

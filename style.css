@@ -91,7 +91,9 @@
   border: solid;
   margin: 1px;
 }
-.mini-symbol {
+.mini-symbol-one,
+.mini-symbol-two,
+.mini-symbol-three {
   flex: 1;
 }
 .forecast-day {
