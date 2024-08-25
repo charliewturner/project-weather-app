@@ -8,8 +8,7 @@ async function checkWeather() {
 
   document.querySelector(".weather-class").innerHTML =
     data.current.condition.text;
-  document.querySelector(".weather-symbol").innerHTML =
-    data.current.condition.icon;
+  // document.querySelector(".weather-symbol").src = data.current.condition.icon;
   document.querySelector(".temp-actual").innerHTML =
     "Temperature: " + data.current.temp_c + " C";
   document.querySelector(".temp-feel").innerHTML =
@@ -17,12 +16,16 @@ async function checkWeather() {
   document.querySelector(".uv-index").innerHTML =
     "UV Index: " + data.current.uv;
   document.querySelector(".wind-speed").innerHTML =
-    "Wind speed: " + data.current.wind_kph;
+    "Wind speed: " + data.current.wind_kph + " kph";
   document.querySelector(".wind-direction").innerHTML =
     "Wind direction: " + data.current.wind_dir;
   document.querySelector(".location").innerHTML = data.location.name;
   document.querySelector(".local-time").innerHTML =
     "Local time:" + "<br>" + data.location.localtime.slice(10, 16);
+
+  var img = new Image();
+  img.src = "http:" + data.current.condition.icon;
+  document.querySelector(".weather-symbol").appendChild(img);
 
   document.querySelector(".mini-symbol-one").innerHTML =
     "Condition: " +
