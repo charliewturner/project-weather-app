@@ -11,9 +11,9 @@ async function checkWeather() {
   document.querySelector(".weather-symbol").innerHTML =
     data.current.condition.icon;
   document.querySelector(".temp-actual").innerHTML =
-    "Temperature: " + data.current.temp_c;
+    "Temperature: " + data.current.temp_c + " C";
   document.querySelector(".temp-feel").innerHTML =
-    "Feels like: " + data.current.feelslike_c;
+    "Feels like: " + data.current.feelslike_c + " C";
   document.querySelector(".uv-index").innerHTML =
     "UV Index: " + data.current.uv;
   document.querySelector(".wind-speed").innerHTML =
@@ -21,7 +21,8 @@ async function checkWeather() {
   document.querySelector(".wind-direction").innerHTML =
     "Wind direction: " + data.current.wind_dir;
   document.querySelector(".location").innerHTML = data.location.name;
-  document.querySelector(".local-time").innerHTML = data.location.localtime;
+  document.querySelector(".local-time").innerHTML =
+    "Local time:" + "<br>" + data.location.localtime;
 
   document.querySelector(".mini-symbol-one").innerHTML =
     "Condition: " +
@@ -29,9 +30,11 @@ async function checkWeather() {
     "<br>" +
     "High: " +
     data.forecast.forecastday[0].day.maxtemp_c +
+    " C" +
     "<br>" +
     "Low: " +
-    data.forecast.forecastday[0].day.mintemp_c;
+    data.forecast.forecastday[0].day.mintemp_c +
+    " C";
 
   document.querySelector(".mini-symbol-two").innerHTML =
     "Condition: " +
@@ -39,9 +42,11 @@ async function checkWeather() {
     "<br>" +
     "High: " +
     data.forecast.forecastday[1].day.maxtemp_c +
+    " C" +
     "<br>" +
     "Low: " +
-    data.forecast.forecastday[1].day.mintemp_c;
+    data.forecast.forecastday[1].day.mintemp_c +
+    " C";
 
   document.querySelector(".mini-symbol-three").innerHTML =
     "Condition: " +
@@ -49,9 +54,11 @@ async function checkWeather() {
     "<br>" +
     "High: " +
     data.forecast.forecastday[2].day.maxtemp_c +
+    " C" +
     "<br>" +
     "Low: " +
-    data.forecast.forecastday[2].day.mintemp_c;
+    data.forecast.forecastday[2].day.mintemp_c +
+    " C";
 
   const weekday = [
     "Sunday",
