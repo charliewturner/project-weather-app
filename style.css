@@ -49,12 +49,18 @@
   flex: 1;
   border: solid;
   margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .weather-class {
   height: 75px;
   border: solid;
   margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .right {
@@ -66,6 +72,9 @@
   flex: 1;
   border: solid;
   margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .two {
@@ -90,6 +99,9 @@
 .forecast > * {
   border: solid;
   margin: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .mini-symbol-one,
 .mini-symbol-two,
@@ -109,6 +121,9 @@
   flex: 1;
   border: solid;
   margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .four {
@@ -121,4 +136,7 @@
   flex: 1;
   border: solid;
   margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

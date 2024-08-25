@@ -79,7 +79,6 @@ async function checkWeather() {
     case 1:
       document.getElementById("forecast-day-two").innerHTML = "Tuesday";
       document.getElementById("forecast-day-three").innerHTML = "Wednesday";
-
       break;
     case 2:
       document.getElementById("forecast-day-two").innerHTML = "Wednesday";
