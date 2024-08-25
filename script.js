@@ -22,7 +22,7 @@ async function checkWeather() {
     "Wind direction: " + data.current.wind_dir;
   document.querySelector(".location").innerHTML = data.location.name;
   document.querySelector(".local-time").innerHTML =
-    "Local time:" + "<br>" + data.location.localtime;
+    "Local time:" + "<br>" + data.location.localtime.slice(10, 16);
 
   document.querySelector(".mini-symbol-one").innerHTML =
     "Condition: " +
@@ -108,8 +108,6 @@ async function checkWeather() {
       document.getElementById("forecast-day-three").innerHTML = "Monday";
   }
 
-  document.getElementById("forecast-day-two").innerHTML = day2;
-  document.getElementById("forecast-day-three").innerHTML = day3;
   console.log(data);
 }
 
