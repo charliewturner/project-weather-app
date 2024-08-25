@@ -24,6 +24,9 @@ async function checkWeather() {
   document.querySelector(".local-time").innerHTML = data.location.localtime;
 
   document.querySelector(".mini-symbol-one").innerHTML =
+    "Condition: " +
+    data.forecast.forecastday[0].day.condition.text +
+    "<br>" +
     "High: " +
     data.forecast.forecastday[0].day.maxtemp_c +
     "<br>" +
@@ -31,6 +34,9 @@ async function checkWeather() {
     data.forecast.forecastday[0].day.mintemp_c;
 
   document.querySelector(".mini-symbol-two").innerHTML =
+    "Condition: " +
+    data.forecast.forecastday[1].day.condition.text +
+    "<br>" +
     "High: " +
     data.forecast.forecastday[1].day.maxtemp_c +
     "<br>" +
@@ -38,6 +44,9 @@ async function checkWeather() {
     data.forecast.forecastday[1].day.mintemp_c;
 
   document.querySelector(".mini-symbol-three").innerHTML =
+    "Condition: " +
+    data.forecast.forecastday[2].day.condition.text +
+    "<br>" +
     "High: " +
     data.forecast.forecastday[2].day.maxtemp_c +
     "<br>" +
@@ -56,12 +65,45 @@ async function checkWeather() {
 
   const d1 = new Date();
   let day = weekday[d1.getDay()];
+
   document.getElementById("forecast-day-one").innerHTML = day;
 
   //write switch-case to alter teh following divs depending on the
   //current day shown in the forecast-day-one div
-  document.getElementById("forecast-day-two").innerHTML = day;
-  document.getElementById("forecast-day-three").innerHTML = day;
+
+  switch (new Date().getDay()) {
+    case 0:
+      document.getElementById("forecast-day-two").innerHTML = "Monday";
+      document.getElementById("forecast-day-three").innerHTML = "Tuesday";
+      break;
+    case 1:
+      document.getElementById("forecast-day-two").innerHTML = "Tuesday";
+      document.getElementById("forecast-day-three").innerHTML = "Wednesday";
+
+      break;
+    case 2:
+      document.getElementById("forecast-day-two").innerHTML = "Wednesday";
+      document.getElementById("forecast-day-three").innerHTML = "Thursday";
+      break;
+    case 3:
+      document.getElementById("forecast-day-two").innerHTML = "Thursday";
+      document.getElementById("forecast-day-three").innerHTML = "Friday";
+      break;
+    case 4:
+      document.getElementById("forecast-day-two").innerHTML = "Friday";
+      document.getElementById("forecast-day-three").innerHTML = "Saturday";
+      break;
+    case 5:
+      document.getElementById("forecast-day-two").innerHTML = "Saturday";
+      document.getElementById("forecast-day-three").innerHTML = "Sunday";
+      break;
+    case 6:
+      document.getElementById("forecast-day-two").innerHTML = "Sunday";
+      document.getElementById("forecast-day-three").innerHTML = "Monday";
+  }
+
+  document.getElementById("forecast-day-two").innerHTML = day2;
+  document.getElementById("forecast-day-three").innerHTML = day3;
   console.log(data);
 }
 
