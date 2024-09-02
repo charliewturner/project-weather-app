@@ -131,5 +131,6 @@ function search() {
     searchLocation +
     "&days=7&aqi=no&alerts=yes";
   checkWeather();
+  searchField.value = "";
 }
 checkWeather();
