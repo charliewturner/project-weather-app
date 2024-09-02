@@ -32,6 +32,7 @@ async function checkWeather() {
 
   var img = new Image();
   img.src = "http:" + data.current.condition.icon;
+  document.querySelector(".weather-symbol").innerHTML = "";
   document.querySelector(".weather-symbol").appendChild(img);
 
   document.querySelector(".mini-symbol-one").innerHTML =
