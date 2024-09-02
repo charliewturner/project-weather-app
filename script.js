@@ -86,9 +86,6 @@ async function checkWeather() {
 
   document.getElementById("forecast-day-one").innerHTML = day;
 
-  //write switch-case to alter teh following divs depending on the
-  //current day shown in the forecast-day-one div
-
   switch (new Date().getDay()) {
     case 0:
       document.getElementById("forecast-day-two").innerHTML = "Monday";
