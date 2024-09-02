@@ -2,6 +2,8 @@
   text-align: center;
   vertical-align: middle;
   border-radius: 8px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-shadow: 0px 0px 12px black;
 }
 .app-container {
   display: flex;
@@ -43,9 +45,10 @@
 }
 .container-one {
   flex: 1;
+  /* border-style: solid;
   width: auto;
   /* border: solid; */
-  margin: 3px;
+  margin: 8px;
 }
 
 .left {
@@ -61,6 +64,7 @@
   justify-content: center;
   align-items: center;
   background-color: rgba(54, 3, 196, 0.356);
+  margin: 8px;
 }
 
 .weather-class {
@@ -71,6 +75,7 @@
   align-items: center;
   color: white;
   background-color: rgba(54, 3, 196, 0.356);
+  margin: 8px;
 }
 
 .right {
@@ -87,6 +92,7 @@
   align-items: center;
   color: white;
   background-color: rgba(54, 3, 196, 0.356);
+  margin: 8px;
 }
 
 .two {
@@ -100,7 +106,8 @@
   /* border: solid; */
   margin: 1px;
   color: white;
-  /* background-color: rgba(54, 3, 196, 0.356); */
+  /* background-col
+  /* border-style: solid;or: rgba(54, 3, 196, 0.356); */
 }
 
 .forecast {
@@ -124,8 +131,13 @@
   flex: 1;
   margin: 5px;
 }
-.forecast-day {
-  height: 15px;
+#forecast-day-one,
+#forecast-day-two,
+#forecast-day-three {
+  height: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 5px;
 }
 .three {
   display: flex;
@@ -135,8 +147,7 @@
 
 .three > * {
   flex: 1;
-
-  margin: 2px;
+  margin: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,7 +165,7 @@
   flex: 1;
   /* border: solid; */
   background-color: rgba(54, 3, 196, 0.356);
-  margin: 2px;
+  margin: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
