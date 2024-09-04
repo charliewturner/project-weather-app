@@ -21,6 +21,7 @@ body {
   border-radius: 30px;
   padding: 15px;
   background-image: linear-gradient(rgb(37, 1, 134), rgb(64, 7, 82));
+  box-shadow: 1px 1px 80px black;
 }
 
 .searchbar-container {
@@ -36,12 +37,14 @@ body {
   background-color: rgba(63, 5, 223, 0.397);
   border: none;
   margin-right: 10px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.534);
 }
 .searchbar-submit {
   width: 100px;
   color: white;
   background-color: rgba(54, 3, 196, 0.356);
   border: none;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.534);
 }
 .one {
   display: flex;
@@ -53,6 +56,7 @@ body {
   width: auto;
   /* border: solid; */
   margin: 8px;
+  /* box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.534); */
 }
 
 .left {
@@ -69,6 +73,7 @@ body {
   align-items: center;
   background-color: rgba(54, 3, 196, 0.356);
   margin: 8px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.534);
 }
 
 .weather-class {
@@ -80,6 +85,7 @@ body {
   color: white;
   background-color: rgba(54, 3, 196, 0.356);
   margin: 8px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.534);
 }
 
 .right {
@@ -97,6 +103,7 @@ body {
   color: white;
   background-color: rgba(54, 3, 196, 0.356);
   margin: 8px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.534);
 }
 
 .two {
@@ -128,6 +135,7 @@ body {
   align-items: center;
   color: white;
   background-color: rgba(54, 3, 196, 0.356);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.534);
 }
 .mini-symbol-one,
 .mini-symbol-two,
@@ -157,6 +165,7 @@ body {
   align-items: center;
   color: white;
   background-color: rgba(54, 3, 196, 0.356);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.534);
 }
 
 .four {
@@ -175,4 +184,5 @@ body {
   align-items: center;
   color: white;
   background-color: rgba(54, 3, 196, 0.356);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.534);
 }
